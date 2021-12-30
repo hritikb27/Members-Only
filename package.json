@@ -1,0 +1,25 @@
+{
+  "name": "members-only",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hritikb27/Members-Only.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hritikb27/Members-Only/issues"
+  },
+  "homepage": "https://github.com/hritikb27/Members-Only#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  }
+}
