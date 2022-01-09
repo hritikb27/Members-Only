@@ -1,0 +1,31 @@
+html
+head 
+body 
+
+    h1 Welcome to Members Only Club! 
+    if(user) 
+        h1 #{user.name.firstname} #{user.name.lastname}
+
+    if(!access)
+        a(href='/becomemember') Become a Member 
+    br
+
+    a(href='/posts/addPost') Create a Post
+
+    each post in posts  
+        if (admin)
+            li= post.author
+            h1= post.title
+            p= post.body
+            p= post.createdAt
+            a(href=`/posts/delete/${post._id}`) Delete
+
+        else if (access)
+            li= post.author
+            h1= post.title
+            p= post.body
+            p= post.createdAt
+
+        else 
+            h1= post.title
+            p= post.body

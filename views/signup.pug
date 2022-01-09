@@ -1,0 +1,31 @@
+html 
+head 
+body 
+    h1 Sign Up for Members Only Club! 
+    form(action="/signup", method="POST")
+        label(for="firstname") Enter First Name
+        br 
+        input(type="text", name="firstname", placeholder="Enter First Name..." id="firstname")
+        br
+        br
+        label(for="lastname") Enter Last Name
+        br 
+        input(type="text", name="lastname", placeholder="Enter Last Name..." id="lastname")
+        br
+        br
+        label(for="email") Enter your Email
+        br 
+        input(type="email", name="username", placeholder="Enter your email id...", id="email")
+        br
+        br
+        label(for="pw") Enter your password
+        br
+        input(type="password", name="password", placeholder="Enter password...", id="pw")
+        br
+        br
+        label(for="confirmpw") Confirm password 
+        br
+        input(type="password", name="confirmpw", placeholder="Confirm password", id="confirmpw")
+        br
+        br
+        button Submit
