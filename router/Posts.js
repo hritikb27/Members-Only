@@ -12,7 +12,7 @@ Router.post('/addPost', (req,res)=>{
     const post = new Content({
         title: req.body.title,
         body: req.body.post,
-        author: "Hritik"
+        author: req.user.name.firstname
     });
 
     post.save();
